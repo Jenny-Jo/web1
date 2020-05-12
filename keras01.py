@@ -10,7 +10,7 @@ from keras.layers import Dense
 model = Sequential()
 model.add(Dense(1,input_dim=1,activation='relu'))
 
-#머신이 어떻게 모델을 돌릴 지 지정=컴파일
+#머신이 어떻게 모델을 돌릴 지, 함수 지정=컴파일
 model.compile(loss='mean_squared_error',optimizer='adam',metrics=['accuracy'])
 
 #모델 실행 fit / 최종 결과에 대한 평가
