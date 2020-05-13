@@ -48,7 +48,7 @@ print(y_predict)
 #RMSE 구하기
 from sklearn.metrics import mean_squared_error
 #함수정의 def ,함수이름은 사용자 정의
-def RMSE(y_test, y_prdict):
+def RMSE(y_test, y_predict):
     return np.sqrt(mean_squared_error(y_test, y_predict)) #sqrt 는 루트
 print("RMSE : ", RMSE (y_test, y_predict))
 
